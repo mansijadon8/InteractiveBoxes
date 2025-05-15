@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="InteractiveBoxes.css" />
+</head>
+<body>
+  <h2>YAY! It’s BOGO</h2>
+
+  <!-- Box for 1 unit selection -->
+  <div class="box-container" data-units="1">
+    <div class="box-header">
+      <span><span class="circle"></span>1 Unit <span class="discount-tag">10% Off</span></span>
+      <div class="price-section">
+        <strong>$10.00 USD</strong>
+        <span class="old-price">$24.00 USD</span>
+      </div>
+     
+    </div>
+    <div style="font-size: 12px; font-weight: 545; color: #110404; margin: 4px 0 0 31px;">
+        <span>Standard Price</span>
+      </div>
+    <div class="options"></div>
+  </div>
+
+  <!-- Box for 2 unit selection -->
+  <div class="box-container active" data-units="2">
+    <div class="most-popular">MOST POPULAR</div>
+    <div class="box-header">
+      <span><span class="circle"></span>2 Unit <span class="discount-tag">20% Off</span></span>
+      <div class="price-section">
+        <strong>$18.00 USD</strong>
+        <span class="old-price">$24.00 USD</span>
+      </div>
+    </div>
+    <div class="options"></div>
+  </div>
+
+   <!-- Box for 3 unit selection -->
+  <div class="box-container" data-units="3">
+    <div class="box-header">
+      <span><span class="circle"></span>3 Unit <span class="discount-tag">30% Off</span></span>
+      <div class="price-section">
+        <strong>$24.00 USD</strong>
+        <span class="old-price">$24.00 USD</span>
+      </div>
+    </div>
+    <div class="options"></div>
+  </div>
+
+  <div class="footer">
+    <div class="delivery-total">
+      <div class="delivery">Free Delivery</div>
+      <div class="total" id="total-price">Total : $18.00 USD</div>
+    </div>
+    <button>+ Add to Cart</button>
+  </div>
+
+<script src="InteractiveBoxes.js"></script>  
+
+</body>
+</html>
